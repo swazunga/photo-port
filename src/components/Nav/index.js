@@ -32,10 +32,12 @@ function Nav() {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a href="#about">About Me</a>
+            <a href="#about" onClick={() => categorySelected}>
+              About Me
+            </a>
           </li>
-          <li>
-            <span>Contact</span>
+          <li className={"mx-2"}>
+            <span onClick={() => categorySelected}>Contact</span>
           </li>
           {categories.map((category) => (
             <li className="mx-1" key={category.name}>
