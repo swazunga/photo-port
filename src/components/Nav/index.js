@@ -21,7 +21,7 @@ function Nav() {
   return (
     <header>
       <h2>
-        <a herf="/">
+        <a data-testid="link" herf="/">
           <span role="img" aria-label="camera">
             {" "}
             📸
@@ -32,8 +32,12 @@ function Nav() {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a href="#about" onClick={() => categorySelected}>
-              About Me
+            <a
+              data-testid="about"
+              href="#about"
+              onClick={() => categorySelected}
+            >
+              About me
             </a>
           </li>
           <li className={"mx-2"}>
